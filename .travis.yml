@@ -6,7 +6,7 @@ before_install:
   - docker build -t gayanprasanna/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run gayanprasanna/docker-react npm run test -- --coverage
+  #- docker run gayanprasanna/docker-react npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
